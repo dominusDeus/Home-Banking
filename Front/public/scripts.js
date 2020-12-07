@@ -89,9 +89,7 @@ function showScreen (operation) {
     let main = document.querySelector('main');
     main.classList.add('kill-scale-change');
     let botonesBack = document.querySelectorAll('#operaciones p');
-    console.log(botonesBack);
     for (let boton of botonesBack) {
-        console.log(boton);
         boton.classList.add('kill-scale-change');
         boton.classList.add('keep-bg-color');
     }
@@ -110,6 +108,16 @@ function removeScreen(){
     screenToRemove.style.visibility='hidden';
     let blurredScreen = document.querySelector('#wrapper');
     blurredScreen.classList.remove('showScreen');
+
+
+    let main = document.querySelector('main');
+    main.classList.remove('kill-scale-change');
+    let botonesBack = document.querySelectorAll('#operaciones p');
+    for (let boton of botonesBack) {
+        boton.classList.remove('kill-scale-change');
+        boton.classList.remove('keep-bg-color');
+    }
+
 }
 
 function cancelOperation() {
