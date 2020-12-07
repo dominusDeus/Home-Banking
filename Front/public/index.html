@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Banking</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <main>
+            <h1>Le damos la bienvenida<span id="nombre-usuario"></span></h1>
+            <div id="pantalla">
+                <div id="operaciones">
+                    <p id="depositar" class="boton">Depositar Dinero</p>    
+                    <p id="extraer" class="boton">Extraer Dinero</p>  
+                </div>
+                <div id="saldo">
+                    <p class="display-saldo top-row">Su saldo actual es de</p>
+                    <p class="display-saldo bottom-row">ARS<span id="saldo-actualizado"></span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="modificar-saldo" class= "hidden">
+        <p>Por favor indique la suma que quisiera <span id="depositar-extraer"></span></p>
+        <input type="number" min="1" max="50000">
+        <div id="botones-form">
+            <div id="submit" class="form-buttons">Submit</div>
+            <div id="cancel" class="form-buttons">Cancel</div>
+        </div>
+    </div>
+    <script src= "./scripts.js"></script>
+</body>
+</html>
