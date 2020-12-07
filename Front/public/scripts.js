@@ -86,6 +86,15 @@ function showScreen (operation) {
     let depositorExtract = document.querySelector('#depositar-extraer');
     depositorExtract.setAttribute("title", operation);
     let body = document.querySelector('#wrapper');
+    let main = document.querySelector('main');
+    main.classList.add('kill-scale-change');
+    let botonesBack = document.querySelectorAll('#operaciones p');
+    console.log(botonesBack);
+    for (let boton of botonesBack) {
+        console.log(boton);
+        boton.classList.add('kill-scale-change');
+        boton.classList.add('keep-bg-color');
+    }
     body.classList.add('showScreen');
     if (operation == "deposit") {
         depositorExtract.innerHTML = "depositar. Puede depositar hasta ARS50.000 por operación";
