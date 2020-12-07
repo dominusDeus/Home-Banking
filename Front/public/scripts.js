@@ -58,7 +58,7 @@ function submitNumber() {
     if (operation == "deposit") {
         if (userInput.value >0 && userInput.value <50000) {
             modifyBalance(operation, userInput.value);
-            setTimeout(showBalanceOnScreen,2);
+            setTimeout(showBalanceOnScreen,100);
             removeScreen();
         } else {
             alert('Debes ingresar un número entre 1 y 50000');
@@ -72,7 +72,7 @@ function submitNumber() {
             alert('Por su seguridad, no está permitido extraer más de ARS20.000 por operación')
         } else {
             modifyBalance(operation, userInput.value);
-            setTimeout(showBalanceOnScreen,2);
+            setTimeout(showBalanceOnScreen,100);
             removeScreen();
         }
     }
