@@ -12,4 +12,8 @@ app.use("/", controllerSaldo);
 
 app.listen(3000, 'localhost', ()=>{console.log("levantó back")})
 
+<<<<<<< HEAD
 // Hola soy un comment!!!
+=======
+//soy otro comment diferente
+>>>>>>> main
